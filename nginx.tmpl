@@ -127,7 +127,7 @@ upstream {{ .Upstream }} {
         server {{ $containerNetwork.IP }}:{{ $port }};
         				{{ else if (eq $knownNetwork.Name "host") }}
                             {{ $server_found = "true" }}
-        server 172.17.0.1:{{ $port }};
+        server 127.0.0.1:{{ $port }};
                         {{ else }}
         # /!\ No IP for this network!
                     	{{ end }}
