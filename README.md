@@ -10,6 +10,8 @@ nginx-proxy sets up a container running nginx and [docker-gen](https://github.co
 
 See [Automated Nginx Reverse Proxy for Docker](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/) for why you might want to use this.
 
+This version is modified to work with containers on the 'host' network (providing the proxy container is also on the 'host' network). Functionality with containers on the 'bridge' network is still maintained.
+
 ### Usage
 
 To run it:
